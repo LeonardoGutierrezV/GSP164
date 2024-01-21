@@ -142,3 +142,6 @@ Si obtienes una salida diferente, trata de cotrrer el script nuevamente.
 generate_traffic_with_key.sh
 
 ```
+Ahora solo es necesario esperar unos 5 minutos para validar todos los puntos solicitados en el laboratorio.
+
+O puedes copiar y pegar el contenido del script GSP164.sh en la terminal del laboratorio.
