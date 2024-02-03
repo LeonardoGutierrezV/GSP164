@@ -15,6 +15,7 @@ cd endpoints-quickstart/scripts
 # 3.1 Ejecutamos el script para implementar el Backend de la API.
 ./deploy_app.sh
 
+
 # 4.1 Después de implementar la API le enviamos solicitudes con el siguiente script.
 ./query_api.sh
 
@@ -25,6 +26,7 @@ cd endpoints-quickstart/scripts
 ./generate_traffic.sh
 
 #Eperamos 5 o 10 repeticiones de la solicitud y presionamos Ctrl+C para detener el proceso
+
 
 ### SEGMENTO DE EJECUCIÓN 2
 

@@ -44,6 +44,8 @@ paths:
             type: string
         400:
           description: "The IATA code is invalid or missing."
+## Se agregan los parametros adicionales para poder forzar una autenticación
+## De la misma forma se plica la configuración de la cuota        
 securityDefinitions:
   # Basic authentication with an API key.
   api_key:

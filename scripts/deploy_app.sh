@@ -26,6 +26,11 @@ main() {
   # Try to create an App Engine project in our selected region.
   # If it already exists, return a success ("|| true").
   echo "gcloud app create --region=$REGION"
+
+###
+### Este segmento del codigo crea el entorno flexible del Backend
+###
+
   gcloud app create --region="$REGION" || true
   # Prepare the necessary variables for substitution in our app configuration
   # template, and create a temporary file to hold the templatized version.
@@ -36,6 +41,10 @@ main() {
     > "$TEMP_FILE"
   echo "Deploying ${APP}..."
   echo "gcloud -q app deploy $TEMP_FILE"
+
+###
+### Una VEz creado en entorno o ambiente del backend se implementa o despliega la APP contenida en 
+###
   gcloud -q app deploy "$TEMP_FILE"
 }
 

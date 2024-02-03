@@ -33,8 +33,10 @@ main() {
   echo "This command will exit automatically in $TIMEOUT_SECONDS seconds."
   echo "Generating traffic to ${url}..."
   echo "Press Ctrl-C to stop."
+  
   local endtime=$(($(date +%s) + $TIMEOUT_SECONDS))
   local request_count=0
+  
   # Send queries repeatedly until TIMEOUT_SECONDS seconds have elapsed.
   while [[ $(date +%s) -lt $endtime ]]; do
     request_count=$(( request_count + 1))

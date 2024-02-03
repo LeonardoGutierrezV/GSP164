@@ -31,7 +31,10 @@ main() {
   < "$API_FILE" sed -E "s/YOUR-PROJECT-ID/${project_id}/g" > "$TEMP_FILE"
   echo "Deploying $API_FILE..."
   echo "gcloud endpoints services deploy $API_FILE"
+
+  ### Este comando despliega el endpoint con base en la configuración del archivo de configuración YAML
   gcloud endpoints services deploy "$TEMP_FILE"
+
 }
 
 cleanup() {
@@ -39,6 +42,9 @@ cleanup() {
 }
 
 # Defaults.
+###
+### Aqui se indica el origen de la configuración estandar del EndPoint
+
 API_FILE="../openapi.yaml"
 
 if [[ "$#" == 0 ]]; then
